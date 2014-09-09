@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+
+  <data>
+    <report id="mrp.report_group_origin_categ"
+            name="mrp.group_origin_categ.webkit"
+            auto="False"
+            model="mrp.production"
+            file="mrp_group_by_origin_and_category_webkit/report/order.mako"
+            string="Production Order Group by Origin and Category"
+            report_type="webkit"/>
+  </data>
+
+  <data noupdate="1">
+        <record id="mrp.report_group_origin_categ" model="ir.actions.report.xml">
+           <field name="webkit_header" ref="base_headers_webkit.base_reports_portrait_header"></field>
+        </record>
+   </data>
+   
+</openerp>
